@@ -1,9 +1,10 @@
 {
-  "name": "webpack_builder",
+  "name": "webpack_builder_test",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "commitmsg": "validate-commit-msg",
     "test": "istanbul cover npx mocha",
     "build": "npx webpack",
     "watch": "webpack --watch",
@@ -59,6 +60,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
     "istanbul": "^0.4.5",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "validate-commit-msg": "^2.14.0"
   }
 }
