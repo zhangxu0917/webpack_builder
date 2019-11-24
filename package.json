@@ -4,17 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commit-msg": "validate-commit-msg",
+    "commitmsg": "validate-commit-msg",
     "test": "istanbul cover npx mocha",
     "build": "npx webpack",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server --open",
     "eslint": "eslint --fix /lib/"
-  },
-  "config": {
-    "ghooks": {
-      "commit-msg": "./validate-commit-msg.js"
-    }
   },
   "keywords": [],
   "author": "",
@@ -43,7 +38,6 @@
     "glob-all": "^3.1.0",
     "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^3.2.0",
-    "husky": "^3.1.0",
     "jquery": "^3.4.1",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
@@ -64,6 +58,7 @@
     "@babel/core": "^7.7.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
+    "husky": "^3.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^6.2.2",
     "validate-commit-msg": "^2.14.0"
