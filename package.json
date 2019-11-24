@@ -11,6 +11,11 @@
     "dev": "webpack-dev-server --open",
     "eslint": "eslint --fix /lib/"
   },
+  "config": {
+    "ghooks": {
+      "commit-msg": "./validate-commit-msg.js"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
