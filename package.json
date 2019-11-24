@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commitmsg": "validate-commit-msg",
+    "commit-msg": "validate-commit-msg",
     "test": "istanbul cover npx mocha",
     "build": "npx webpack",
     "watch": "webpack --watch",
