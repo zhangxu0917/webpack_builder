@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commitmsg": "validate-commit-msg",
     "test": "istanbul cover npx mocha",
     "build": "npx webpack",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server --open",
     "eslint": "eslint --fix /lib/"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg"
+    }
   },
   "keywords": [],
   "author": "",
