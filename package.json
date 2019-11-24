@@ -3,17 +3,18 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx validate-commit-msg",
+      "pre-push": "npm test"
+    }
+  },
   "scripts": {
     "test": "istanbul cover npx mocha",
     "build": "npx webpack",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server --open",
     "eslint": "eslint --fix /lib/"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx test"
-    }
   },
   "keywords": [],
   "author": "",
